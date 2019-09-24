@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>关于我们</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .text {
+            margin-top: 1.0rem;
+            font-size: 3.2rem;
+            color: #c0c0c0;
+        }
+        .blue{
+            font-size: 3.2rem;
+            color: #16a6f9;
+        }
+
+    </style>
+</head>
+<body >
+<div class="text">深圳市兰丁科技有限公司</div>
+<div class="text">电话：<me class="blue">400-887-6828</me>
+</div>
+<div class="text">邮箱：<me class="blue">mkt@landinghome.com</me>
+</div>
+<div class="text">网址：<a href="http://www.landinghome.com" style="color:#16a6f9;text-decoration: underline">www.landinghome.com</a>
+</div>
+<div class="text">地址：中国广东省深圳市南山区蛇口南海大道1019号南山医疗器械产业园二楼</div>
+<script>
+    var info;
+	if(null != activityManager){
+	  info = activityManager.getVersion();
+	  document.write("info:" + info );
+	}else{
+		document.write("null    ......" );
+	}
+</script>
+
+</body>
+</html>

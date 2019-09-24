@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			复习html
+		</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" type="text/css" href="../css/mycss.css"/>
+		<style type="text/css">
+			body{background-color:#ff9999}
+			div#header {background-color:#99bbbb}
+			div#menu {background-color:#ffff99;height:700px;width:200px;float:left}
+			div#content1 {background-color:#eeeeee;height:700px;width:500px;float:left}
+			.classsel1{text-align:center}
+			.classsel2{background-color:#ff0000}
+		</style>
+	</head>
+	
+	<body>
+	    <a href="navigator.html">试一下默认地址</a> <a href="php.html">Php入口</a>
+		<div id="header">
+			<marquee behavior="scroll" width="400" scrollamount="15">
+				<h1>MY HTML</h1>
+			</marquee>
+		</div>
+		<hr />
+		
+		<div id="menu">
+		第一章<br />
+		第二章<br />
+		第三章<br />
+		第四章<br />
+		</div>
+		<div id="content1">
+		<!-- 注释就是这样加的 -->
+		<font>
+			<p><b>九阴</b><br /><i>九阳</i></p>
+		</font>	
+		
+		<p>
+			<a href = "http://www.baidu.com">百度一下</a><br />
+			<div class="classsel1">
+				this is ""  test
+			</div>
+			<span class="classsel2">
+				this is '' test
+			</span>
+		</p>
+	
+		<p>
+			<img src="http://i1.qhimg.com/dr/270_500_/t0165a96b89bd26dd8f.png?size=331x343"/>
+			
+			<table width="400px" border="1px">
+				<tr>
+					<td>姓名</td><td>年龄</td><td>性别</td>
+				</tr>
+				<tr>
+					<td>张三</td><td>10</td><td>男</td>
+				</tr>
+				<tr>
+					<td>李四</td><td>90</td><td>男</td>
+				</tr>
+				<tr>
+					<td>王美丽</td><td>12</td><td>女</td>
+				</tr>
+				<tr >
+					<td>过儿</td><td colspan="2">505:男</td>
+				</tr>
+			</table>
+			
+			
+			<form>
+				name:<input type="text" name="username" id="username"/><br />
+				pwd :<input type="text" name="password" id="pwd"/></br />
+				<input type="button" onclick="display_alert()" value="显示对话框"/>
+			</form>
+		</p>
+		
+		</div>
+		<div id="content2">
+			<a href="../res/mp4/test.html">test</a>
+			<video id="player" width="400px">
+				<source src="../res/mp4/123.mp4" type="video/mp4"/>
+			</video>
+			
+			<form>
+				<input type="button" onclick="play_video()" value="播放"/>
+				<input type="button" onclick="big()" value="放大"/>
+				<input type="button" onclick="small()" value="缩小"/>
+			</form>
+		</div>
+		
+		<script type="text/javascript">
+			document.write("javascript feel good");
+			function display_alert(){
+				var username = document.getElementById("username").value;
+				var pwd = document.getElementById("pwd").value;
+				alert("用户名：" + username + "\n密码：" + pwd);
+			}
+			var player = document.getElementById("player");
+			function play_video(){
+				var player = document.getElementById("player");
+				if(player.paused){
+					player.play();
+				}else{
+					player.pause();
+				}
+			}
+			
+			function big(){
+				var size = player.width;
+				player.width = size * 1.1;
+			}
+			
+			function small(){
+				var size = player.width;
+				player.width = size * 0.9;
+			}
+		</script>
+		
+		
+	</body>
+
+</html>

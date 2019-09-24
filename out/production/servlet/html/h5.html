@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"></meta>
+		<title>H5妹子</title>
+	</head>
+	
+	<body>
+	<form>
+		<input type="button" value="start" onclick="startDraw()" />
+		<input type="button" value="close" onclick="closePage()" />
+	</form>
+	<canvas id="myCanvas" width="200px" height="200px" style="border-color:#ff0000;border-width:1px;border-style:solid"></canvas>	
+	<canvas id="myCanvas1" width="200px" height="200px" style="border-color:#ff0000;border-width:4px;border-style:dotted solid double dashed"></canvas>
+	<canvas id="myCanvas2" width="200px" height="200px" style="border-color:#ff0000;border-width:4px;border-style:dotted solid double dashed"></canvas>
+
+	<script type="text/javascript">
+		var c=document.getElementById("myCanvas");
+		var cxt=c.getContext("2d");
+		cxt.fillStyle="#FF0000";
+		cxt.fillRect(0,0,150,75);
+		
+		function startDraw(){
+			var c1 = document.getElementById("myCanvas");
+			var cxt2 = c1.getContext("2d");
+			cxt2.moveTo(100,100);
+			cxt2.lineTo(100,150);
+			cxt2.lineTo(150,150);
+			cxt2.lineTo(150,100);
+			cxt2.lineTo(100,100);
+			cxt2.stroke();
+		}
+		
+		function closePage(){
+			shangjiatongApp.backNative();
+		}
+	</script>
+	
+	</body> 
+	<script src="https://j1.58cdn.com.cn/m58/pay/js/sj_app_v20180503220603.js"></script>-->
+
+</html>

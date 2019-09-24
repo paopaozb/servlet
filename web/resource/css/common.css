@@ -1,0 +1,27 @@
+@charset "utf-8";
+*{ padding:0; margin:0; }
+body{ padding:0px; margin:0px; background:#ededed; font:12px/1.5 '\5fae\8f6f\96c5\9ed1', 'Lucida Grande', Arial, '\5b8b\4f53'; text-align:center; background:#327eb3; }
+.i18n{text-align:right;font-family:"Microsoft Yahei";top:0;margin:0px;}
+.main{margin:60px auto;width: 320px;min-height: 220px;}
+
+.icon{float:left; width:100px; height:120px;padding-left:10px;}
+.icon_right{float:left;color:#fff;}
+.icon_title{padding-top:8px;font: 20px/100% "Microsoft Yahei"; color:#fff;}
+.info{padding-top:18px;font-family:"Microsoft Yahei";}
+.down{position:relative;width: 320px;margin: 0 auto;clear: both;}
+.android,.iphone{width:250px;height:64px;border-radius:32px;box-shadow:0 4px 8px rgba(4,0,0,0.08);-webkit-transition:all 0.5s ease-in;
+		transition:all 0.5s ease-in;display:block;position:relative;z-index:20;left:35px}
+.down .android{background-color:#a0d468;top:0px}
+.down .android:hover{background-color:#77b732}
+.down .iphone{background-color:#48cfad;top:0px}
+.down .iphone:hover{background-color:#33b897}
+.down .icon-android,.down .icon-iphone{background:url('btn_down.png') no-repeat;width:28px;height:33px;position:absolute;z-index:21;top:15px;left:31px}
+.down .icon-android{background-position:-3px -246px}
+.down .icon-iphone{background-position:-3px -204px}
+.spliter{position:absolute;width:1px;border-left:1px solid #dde6e9;opacity:0.5;filter:alpha(opacity=50);z-index:21;top:18px;left:76px;height:29px}
+.content-info{color:#edf7fc;position:absolute;font-size:17px;top:21px;left:100px;z-index:21}
+.weixin{color:#ff0000;clear:both;}
+.icon img{width:80px;height:80px;}
+
+.down .nodown{background-color:#979C9B}
+.down .nodown:hover{background-color:#979C9B}

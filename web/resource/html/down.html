@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>康复快线APP下载</title>
+<meta name="author" content="www.twsz.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta http-equiv="pragma" content="no-cache" />
+<meta http-equiv="Expires" CONTENT="-1">           
+<meta http-equiv="Cache-Control" CONTENT="no-cache">           
+<meta http-equiv="Pragma" CONTENT="no-cache">    <!--
+<link rel="stylesheet" type="text/css" href="../css/common.css"/> -->
+<style type="text/css">
+	@charset "utf-8";
+	*{ padding:0; margin:0; }
+	body{ padding:0px; margin:0px; background:#ededed; font:12px/1.5 '\5fae\8f6f\96c5\9ed1', 'Lucida Grande', Arial, '\5b8b\4f53'; text-align:center; background:#327eb3; }
+	.i18n{text-align:right;font-family:"Microsoft Yahei";top:0;margin:0px;}
+	.main{margin:60px auto;width: 320px;min-height: 220px;}
+
+	.icon{float:left; width:100px; height:120px;padding-left:10px;}
+	.icon_right{float:left;color:#fff;}
+	.icon_title{padding-top:8px;font: 20px/100% "Microsoft Yahei"; color:#fff;}
+	.info{padding-top:18px;font-family:"Microsoft Yahei";}
+	.down{position:relative;width: 320px;margin: 0 auto;clear: both;}
+	.android,.iphone{width:250px;height:64px;border-radius:32px;box-shadow:0 4px 8px rgba(4,0,0,0.08);-webkit-transition:all 0.5s ease-in;
+			transition:all 0.5s ease-in;display:block;position:relative;z-index:20;left:35px}
+	.down .android{background-color:#a0d468;top:0px}
+	.down .android:hover{background-color:#77b732}
+	.down .iphone{background-color:#48cfad;top:0px}
+	.down .iphone:hover{background-color:#33b897}
+	.down .icon-android,.down .icon-iphone{background:url('btn_down.png') no-repeat;width:28px;height:33px;position:absolute;z-index:21;top:15px;left:31px}
+	.down .icon-android{background-position:-3px -246px}
+	.down .icon-iphone{background-position:-3px -204px}
+	.spliter{position:absolute;width:1px;border-left:1px solid #dde6e9;opacity:0.5;filter:alpha(opacity=50);z-index:21;top:18px;left:76px;height:29px}
+	.content-info{color:#edf7fc;position:absolute;font-size:17px;top:21px;left:100px;z-index:21}
+	.weixin{color:#ff0000;clear:both;}
+	.icon img{width:80px;height:80px;}
+	.down .nodown{background-color:#979C9B}
+	.down .nodown:hover{background-color:#979C9B}
+</style>
+</head>
+<body onload="load()">
+	<div class="main"> 
+		<div>
+			<div class="icon">
+				<img style="border-radius:10%" src="../res/image/1.png"/>
+			</div>
+			<div class="icon_right">
+				<div class="icon_title">康复快线 APP下载</div>
+				<p class="info">康复快线，拉近您和医生的距离</p>
+			</div>
+			<script>
+				var ua = navigator.userAgent.toLowerCase();
+				var platform = navigator.platform.toLowerCase();
+				if(ua.indexOf('micromessenger') != -1) {
+					
+					document.write('<p class="weixin">微信扫描请在右上角里用浏览器打开该下载地址</p>');
+				}
+				
+				function load(){
+					<!--confirm("ua:"+ua +"\nplatform:" + platform+"\nwidth:" + screen.availWidth );-->
+					if (/iphone|ipad|ipod/.test(ua)) {
+						document.getElementById("android").style.display = 'none';
+					} else if (/android/.test(ua)) {
+						document.getElementById("ios").style.display = 'none';
+					}else{}
+				}
+		
+
+			</script>
+		</div>
+		
+		
+		
+		<div class="down">
+			<div  id="android">
+			
+				<a href="http://twsz-app.oss-cn-hangzhou.aliyuncs.com/FastRecovery.apk" class="android">
+					<i class="icon-android"></i>
+					<span class="spliter"></span>
+					<span class="content-info">下载Android版</span>
+				</a>
+				</br>
+			</div>
+			
+			<div id="ios">
+				<p class="weixin">安装企业版本，需要在苹果手机设置菜单的通用选项，进入设备管理或者描述文件后添加为信任文件</p>
+				</br>
+				<a href="itms-services://?action=download-manifest&url=https://app.landinghome.net:8443/fastrecovery/fr_patient.plist" class="iphone">
+					<i class="icon-iphone"></i>
+					<span class="spliter"></span>
+					<span class="content-info">下载iPhone版</span>
+				</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"></meta>
+		<title>html执行顺序</title>
+		<link rel="stylesheet" type="text/css" href="../css/mycss.css"/>
+		<script type="text/script" src="nimade.js"></script>
+	</head>
+	
+	<body>
+		<div id ="content2">
+		<p>1</p>
+		</div>
+		<p id = "p1" style="background-color:#ff0000">2</p>
+		<script>
+			f();
+			document.write("ooo");
+			document.getElementById("p21").style.backgroundColor = "#00ff00";
+			while(true){
+				
+			}
+		</script>
+		
+		<p>3</p>
+		<p>4</p>
+		<script>
+			document.write("ooo");
+		</script>
+
+		<p>1</p>
+	
+	</body>
+</html>
