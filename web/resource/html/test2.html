@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <script src="//j1.58cdn.com.cn/shangjiatong/sdk/sj_app_v20190327110116.js"></script>
+    <script>
+        function taskButtonClick(){
+
+            shangjiatongApp.callNativeNew("task", {
+                // body...
+            },function (e){
+
+                alert(e.exist);
+            })
+            
+        }
+        function signButtonClick(){
+            shangjiatongApp.callNativeNew("daysign", {
+                // body...
+            },function (e){
+
+                alert(e.exist);
+            })
+        }
+    </script>
+</head>
+<body>
+
+ 
+    <div id="app"></div>
+    <br/>
+    <br/>
+    <input  id="button" type="button" value="任务" onclick="taskButtonClick()">  
+    <input  id="button" type="button" value="签到" onclick="signButtonClick()"> 
+
+</body>
+</html>
